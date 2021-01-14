@@ -29,13 +29,3 @@ ueRoutingInfo: # the list of ue routing information
           - BranchingUPF
           - AnchorUPF2
 
-routeProfile: # Maintains the mapping between RouteProfileID and ForwardingPolicyID of UPF
-  MEC1: # Route Profile identifier
-    forwardingPolicyID: 10 # Forwarding Policy ID of the route profile
-
-pfdDataForApp: # PFDs for an Application
-  - applicationId: edge # Application identifier
-    pfds: # PFDs for the Application
-      - pfdID: pfd1 # PFD identifier
-        flowDescriptions: # Represents a 3-tuple with protocol, server ip and server port for UL/DL application traffic
-          - permit out ip from 60.60.0.1 8080 to any
